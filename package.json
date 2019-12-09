@@ -11,7 +11,8 @@
     "read-config": "^1.6.0",
     "socket.io": "^1.4.5",
     "ssh2": "latest",
-    "term.js": "0.0.7"
+    "term.js": "0.0.7",
+    "socksv5": "latest"
   },
   "name": "wsssh",
   "version": "1.0.0",
