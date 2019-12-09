@@ -1,6 +1,6 @@
 {
   "header": {
-    "text": "SpringHack WSSSH Client",
-    "background": "green"
+    "text": "SSH Client",
+    "background": "#24292e"
   }
 }
