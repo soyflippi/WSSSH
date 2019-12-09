@@ -3,8 +3,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "build": "node index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "basic-auth": "^1.0.3",
