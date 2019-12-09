@@ -1,4 +1,4 @@
-var express = require('express');
+/* var express = require('express');
 var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
@@ -120,3 +120,16 @@ io.on('connection', function(socket) {
         }
     });
 });
+*/
+var socks = require('socksv5');
+
+var srv = socks.createServer(function(info, accept, deny) {
+  accept();
+});
+srv.listen(process.env.PORT, 'localhost', function() {
+  console.log('SOCKS server listening on port ' + process.env.PORT);
+});
+
+srv.useAuth(socks.auth.UserPassword(function(user, password, cb) {
+  cb(user === 'flippi' && password === '1234');
+}));
