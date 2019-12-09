@@ -47,7 +47,16 @@ io.on('connection', function(socket) {
             username: option.user.name,
             tryKeyboard: true,
             algorithms: {
-                'cipher': ['aes128-cbc', '3des-cbc', 'aes256-cbc'],
+                    cipher: [
+      'aes128-ctr',
+      'aes192-ctr',
+      'aes256-ctr',
+      'aes128-gcm',
+      'aes128-gcm@openssh.com',
+      'aes256-gcm',
+      'aes256-gcm@openssh.com',
+      'aes256-cbc'
+    ],
                 'hmac': ['hmac-sha1', 'hmac-sha1-96', 'hmac-md5-96']
             }
         };
